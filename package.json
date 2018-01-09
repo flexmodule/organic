@@ -1,0 +1,22 @@
+{
+  "name": "organic",
+  "version": "1.0.0",
+  "description": "有机农产品销售",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexmodule/organic.git"
+  },
+  "keywords": [
+    "有机农产品"
+  ],
+  "author": "zhuohai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flexmodule/organic/issues"
+  },
+  "homepage": "https://github.com/flexmodule/organic#readme"
+}
