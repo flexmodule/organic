@@ -1,0 +1,12 @@
+module.exports={
+	entries:[
+	"home",
+	"detail",
+	"cast",
+	"register",
+	"login"],
+	cssPublicPath:"../",
+    imgOutputPath:"img/",
+    cssOutputPath:"./css/styles.css",
+    devServerOutputPath:"../dist"
+}
