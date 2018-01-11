@@ -1,5 +1,4 @@
 # organic
-<<<<<<< HEAD
 安装运行:<br>
 npm install
 ---------------------
