@@ -9,11 +9,11 @@ let Entry={};
 config.entries.forEach((page)=>{
 	const htmlplugin=new HTMLWebpackPlugin({
 		filename:`${page}/index.html`,
-		template: path.resolve(__dirname,`../src/entries/${page}.index.html`),
+		template: path.resolve(__dirname,`../src/entries/${page}/index.html`),
 		chunks:[page]
 	});
 	HTMLPlugins.push(htmlplugin);
-	Entry[page]=path.resolve(__dirname,`../src/entries/${page}.index.js`);
+	Entry[page]=path.resolve(__dirname,`../src/entries/${page}/index.js`);
 });
 module.exports={
 	entry:Entry,
