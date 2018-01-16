@@ -5,6 +5,7 @@ const config=require("./config");
 module.exports=webpackMerge(webpackBase,{
 	devServer:{
 		inline:true,
+		hot:true,
 		contentBase:config.devServerOutputPath,
 		port: '8088',
 		historyApiFallback: true,
