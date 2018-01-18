@@ -69,7 +69,8 @@ module.exports={
         		options:{
         			limit:1,
         			name:"[name].[ext]",
-        			outputPath:config.imgOutputPath
+        			outputPath:config.imgOutputPath,
+        			publicPath:'../'
         		}
         	}
         },
