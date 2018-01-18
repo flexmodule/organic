@@ -26,6 +26,10 @@ module.exports={
 	module:{
 		rules:[
 		{
+　　　　　　test: /\.html$/,
+　　　　　　loader: 'html-withimg-loader'
+　　　　},
+		{
 			test:/\.css$/,
 			exclude:/node_modules/,
 			use:ExtractTextPlugin.extract({
@@ -61,7 +65,7 @@ module.exports={
         {
         	test:/\.(png|svg|jpg|gif)$/,
         	use:{
-        		loader:"file-loader",
+        		loader:"url-loader",
         		options:{
         			name:"[name].[ext]",
         			outputPath:config.imgOutputPath
