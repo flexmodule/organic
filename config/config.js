@@ -5,8 +5,6 @@ module.exports={
 	"cast",
 	"register",
 	"login"],
-	cssPublicPath:"../",
     imgOutputPath:"img/",
-    cssOutputPath:"./css/styles.css",
-    devServerOutputPath:"../dist"
+    devServerOutputPath:"../dist",
 }

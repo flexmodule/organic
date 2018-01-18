@@ -10,6 +10,7 @@ config.entries.forEach((page)=>{
 	const htmlplugin=new HTMLWebpackPlugin({
 		filename:`${page}/index.html`,
 		template: path.resolve(__dirname,`../src/entries/${page}/index.html`),
+		inject: true,
 		chunks:[page]
 	});
 	HTMLPlugins.push(htmlplugin);
@@ -19,7 +20,7 @@ module.exports={
 	entry:Entry,
 	devtool:"source-map",
 	output:{
-		filename:"js/[name].bundle.[hash].js",
+		filename:"js/[name].bundle.js",
 		path:path.resolve(__dirname,"../dist")
 	},
 	module:{
@@ -28,8 +29,7 @@ module.exports={
 			test:/\.css$/,
 			exclude:/node_modules/,
 			use:ExtractTextPlugin.extract({
-				fallback:"style-lodaer",
-				publicPath:config.cssPublicPath,
+				fallback:"style-loader",
 				use:[
 				{
 					loader:"css-loader",
@@ -83,7 +83,9 @@ module.exports={
 	},
 	plugins:[
 		new CleanWebpackPlugin(["dist"]),
-		new ExtractTextPlugin(config.cssOutputPath),
+		new ExtractTextPlugin({
+         filename: './css/[name].css'
+        }),
 		...HTMLPlugins
 	]
 }
