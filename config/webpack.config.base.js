@@ -67,6 +67,7 @@ module.exports={
         	use:{
         		loader:"url-loader",
         		options:{
+        			limit:1,
         			name:"[name].[ext]",
         			outputPath:config.imgOutputPath
         		}
