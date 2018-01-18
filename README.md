@@ -4,7 +4,7 @@ npm install
 ---------------------
 npm start
 -------------------------------
-有机农产品销售
+webpack封装的多页面脚手架
 --------------------------------------
 1.安装webpack，编译打包<br>
 2.安装webpack-dev-server配置服务器,webpack-dev-server是一个小型的Node.js Express服务器,它使用webpack-dev-middleware来服务于webpack的包,除此自外，它还有一个通过Sock.js来连接到服务器的微型运行时.webpack-dev-server主要是启动了一个使用express的Http服务器。它的作用主要是用来伺服资源文件。此外这个Http服务器和client使用了websocket通讯协议，原始文件作出改动后，webpack-dev-server会实时的编译，但是最后的编译的文件并没有输出到目标文件夹<br>
