@@ -5,6 +5,9 @@ const webpack=require("webpack");
 module.exports=webpackMerge(webpackBase,{
 	plugins:[
 		new webpack.optimize.UglifyJsPlugin({
+			  output:{
+			  	comments:false// 压缩时去掉js所有注释，包括copyright信息
+			  },
 		      compress: {
 		        warnings: false
 		      },

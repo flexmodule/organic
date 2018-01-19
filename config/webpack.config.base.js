@@ -100,35 +100,35 @@ module.exports={
 	    id: 'html-withimg',
 	    loaders: [{
 	    loader: 'html-withimg-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         }),
         new HappyPack({
 	    id: 'style',
 	    loaders: [{
 	    loader: 'style-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         }),
         new HappyPack({
 	    id: 'css',
 	    loaders: [{
 	    loader: 'css-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         }),
         new HappyPack({
 	    id: 'postcss',
 	    loaders: [{
 	    loader: 'postcss-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         }),
         new HappyPack({
 	    id: 'sass',
 	    loaders: [{
 	    loader: 'sass-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         }),
         new HappyPack({
@@ -136,6 +136,7 @@ module.exports={
 	    loaders: [{
 	    loader: 'babel-loader',
 	    options: { 
+	    	presets:['env'],
 	    	babelrc: true, 
 	    	cacheDirectory: true ,
 	    	threadPool:HappyThreadPool}
@@ -145,14 +146,14 @@ module.exports={
 	    id: 'url',
 	    loaders: [{
 	    loader: 'url-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         }),
 		new HappyPack({
 	    id: 'file',
 	    loaders: [{
 	    loader: 'file-loader',
-	    options: { babelrc: true, cacheDirectory: true ,threadPool:HappyThreadPool}
+	    options: { cacheDirectory: true ,threadPool:HappyThreadPool}
         }]
         })
 	]
