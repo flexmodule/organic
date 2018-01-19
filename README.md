@@ -34,3 +34,9 @@ b.自定生成HTML配置<br>
 1.处理编译速度，使loader多进程编译<br>
 happypack<br>
 
+
+
+遇到的坑
+------------------
+1.webpack对于html处理不友好，需要html-withimg-loader插件才能在html中读取img src的图片<br>
+2.
