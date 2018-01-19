@@ -13,6 +13,9 @@ module.exports=webpackMerge(webpackBase,{
 		      },
 		      sourceMap: true
 		      }),
+			  externals:{
+			  	//排除资源打包
+			  }
 		new webpack.optimize.CommonsChunkPlugin({
 			name:"commons",
 			filename:"[name].bundle.js"
