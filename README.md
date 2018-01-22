@@ -28,7 +28,13 @@ config文件解析<br>
 2.webpack.config.base.js   基础配置文件<br>
 a.相关插件引入<br>
 b.自定生成HTML配置<br>
-
+3.use: ExtractTextPlugin.extract({<br><br>
+          fallback: "style-loader", // 编译后用什么loader来提取css文件<br>
+          use: "css-loader" // 指需要什么样的loader去编译文件,这里由于源文件是.css所以选择css-loader<br><br>
+        })<br>
+use:指需要什么样的loader去编译文件,这里由于源文件是.css所以选择css-loader<br>
+fallback:编译后用什么loader来提取css文件<br>
+publicfile:用来覆盖项目路径,生成该css文件的文件路径<br>
 优化处理<br>
 ------------------------------------
 1.处理编译速度，使loader多进程编译<br>
