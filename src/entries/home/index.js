@@ -1,3 +1,3 @@
-import "@css/home.scss"
-console.log(document.getElementsByClassName("header"))
+import "@/css/home.scss"
+console.log(document.getElementsByClassName('header'));
 
