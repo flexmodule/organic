@@ -35,6 +35,9 @@ b.自定生成HTML配置<br>
 use:指需要什么样的loader去编译文件,这里由于源文件是.css所以选择css-loader<br>
 fallback:编译后用什么loader来提取css文件<br>
 publicfile:用来覆盖项目路径,生成该css文件的文件路径<br>
+
+
+
 优化处理<br>
 ------------------------------------
 1.处理编译速度，使loader多进程编译<br>
