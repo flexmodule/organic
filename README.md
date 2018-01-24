@@ -51,3 +51,7 @@ https://www.jianshu.com/p/2cc4a1078953<br>
 https://segmentfault.com/a/1190000007891318<br>
 1.webpack对于html处理不友好，需要html-withimg-loader插件才能在html中读取img src的图片<br>
 2.a-------------------happypack在处理html-withimg-loader时，以及由于 HappyPack 对 url-loader 和 file-loader 的支持度的问题，所以，我们此处，打包图片文件的时候，并没有使用 HappyPack。b-----------------其中，需要注意的一点就是，在使用 HappyPack 的情况下，我们需要单独创建一个 postcss.config.js 文件，不然，在编译的时候，就会报错<br>
+
+文档摘要
+----------------------------
+1.loader 让 webpack 能够去处理那些非 JavaScript 文件（webpack 自身只理解 JavaScript）<br>
